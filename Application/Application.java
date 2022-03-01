@@ -34,7 +34,7 @@ public class Application {
         String createTable = "CREATE TABLE IF NOT EXISTS users (user_id INT PRIMARY KEY AUTO_INCREMENT, first_name VARCHAR(50) NOT NULL, last_name VARCHAR(50) NOT NULL);";
         Connection connection = null;
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306", "root", "Cuddles1");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306", "root", "password");
         } catch (SQLException e) {
             System.out.println("Couldn't find a connection.");
         }
